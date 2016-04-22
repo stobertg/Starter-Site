@@ -1,0 +1,65 @@
+.speed-3ms{	@include transition(300ms);}
+.speed{		@include transition(600ms);}
+.speed-1s{	@include transition(1000ms);}
+
+.cubic{@include transition-timing-function(cubic-bezier(0.770, 0.000, 0.175, 1.000));}
+
+@keyframes slideinout {
+	0% {
+		@include transform(translateY(100%));
+	}
+
+	50% {
+		@include transform(translateY(0%));
+	}
+
+	100% {
+		@include transform(translateY(-101%));
+	}
+}
+
+@keyframes slidein {
+	0% {
+		opacity: 0;
+		@include transform(translateY(10%));
+	}
+
+	100% {
+		opacity: 1;
+		@include transform(translateY(0%));
+	}
+}
+
+@keyframes bounce {
+	0% {
+		opacity: 0;
+		@include transform(scale(0.8));
+	}
+
+	25% {
+		opacity: 1;
+		@include transform(scale(1.2));
+
+		div:before{
+			background: red;
+		}
+	}
+
+	50% {
+		opacity: 1;
+		@include transform(scale(0.9));
+
+	}
+
+	100% {
+		opacity: 1;
+		@include transform(scale(1));
+		
+	}
+}
+
+// .animated{
+// 	@include animation(slideinout);
+// 	@include animation-duration(1500ms);
+// 	@include animation-fill-mode(forwards);
+// }

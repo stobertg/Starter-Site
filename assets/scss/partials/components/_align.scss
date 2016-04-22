@@ -1,0 +1,49 @@
+.center-absolute{
+	position: absolute;
+	margin: auto;
+}
+
+.center-horizontal{
+	@extend .center-absolute;
+	left: 0px;
+	right: 0px;
+}
+
+.center-vertical{
+	@extend .center-absolute;
+	top: 0px;
+	bottom: 0px;
+}
+
+.center-all{
+	@extend .center-horizontal;
+	@extend .center-vertical;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.display-inline{
+	display: inline-block;
+}
+
+.left{
+	float: left;
+}
+
+.right{ 
+	float: right;
+}
+
+.clear{
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}

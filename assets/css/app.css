@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  html:before, html:after, body:before, body:after, div:before, div:after, span:before, span:after, applet:before, applet:after, object:before, object:after, iframe:before, iframe:after,
+  h1:before,
+  h1:after, h2:before, h2:after, h3:before, h3:after, h4:before, h4:after, h5:before, h5:after, h6:before, h6:after, p:before, p:after, blockquote:before, blockquote:after, pre:before, pre:after,
+  a:before,
+  a:after, abbr:before, abbr:after, acronym:before, acronym:after, address:before, address:after, big:before, big:after, cite:before, cite:after, code:before, code:after,
+  del:before,
+  del:after, dfn:before, dfn:after, em:before, em:after, img:before, img:after, ins:before, ins:after, kbd:before, kbd:after, q:before, q:after, s:before, s:after, samp:before, samp:after,
+  small:before,
+  small:after, strike:before, strike:after, strong:before, strong:after, sub:before, sub:after, sup:before, sup:after, tt:before, tt:after, var:before, var:after,
+  b:before,
+  b:after, u:before, u:after, i:before, i:after, center:before, center:after,
+  dl:before,
+  dl:after, dt:before, dt:after, dd:before, dd:after, ol:before, ol:after, ul:before, ul:after, li:before, li:after,
+  fieldset:before,
+  fieldset:after, form:before, form:after, label:before, label:after, legend:before, legend:after,
+  table:before,
+  table:after, caption:before, caption:after, tbody:before, tbody:after, tfoot:before, tfoot:after, thead:before, thead:after, tr:before, tr:after, th:before, th:after, td:before, td:after,
+  article:before,
+  article:after, aside:before, aside:after, canvas:before, canvas:after, details:before, details:after, embed:before, embed:after,
+  figure:before,
+  figure:after, figcaption:before, figcaption:after, footer:before, footer:after, header:before, header:after, hgroup:before, hgroup:after,
+  menu:before,
+  menu:after, nav:before, nav:after, output:before, output:after, ruby:before, ruby:after, section:before, section:after, summary:before, summary:after,
+  time:before,
+  time:after, mark:before, mark:after, audio:before, audio:after, video:before, video:after {
+    content: ' '; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.5em; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* -- Type Sizes -- */
+/* 80px */
+/* 72px */
+/* 60px */
+/* 50px */
+/* 42px */
+/* 36px */
+/* 30px */
+/* 28px */
+/* 24px */
+/* 21px */
+/* 18px */
+/* 16px */
+/* 14px */
+/* 12px */
+/* -- Favorite Grayscale Colors -- */
+.center-absolute, .center-horizontal, .center-all, .center-vertical {
+  position: absolute;
+  margin: auto; }
+
+.center-horizontal, .center-all {
+  left: 0px;
+  right: 0px; }
+
+.center-vertical, .center-all {
+  top: 0px;
+  bottom: 0px; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.display-inline {
+  display: inline-block; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.speed-3ms {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  transition: 300ms; }
+
+.speed {
+  -webkit-transition: 600ms;
+  -moz-transition: 600ms;
+  -ms-transition: 600ms;
+  transition: 600ms; }
+
+.speed-1s {
+  -webkit-transition: 1000ms;
+  -moz-transition: 1000ms;
+  -ms-transition: 1000ms;
+  transition: 1000ms; }
+
+.cubic {
+  -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -ms-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1); }
+
+@keyframes slideinout {
+  0% {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%); }
+  50% {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%); }
+  100% {
+    -webkit-transform: translateY(-101%);
+    -moz-transform: translateY(-101%);
+    -ms-transform: translateY(-101%);
+    transform: translateY(-101%); } }
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    transform: translateY(10%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%); } }
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    div:before {
+      background: red; } }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+
+::-moz-selection {
+  color: #fff;
+  background: #1e1e1e; }
+
+::selection {
+  color: #fff;
+  background: #1e1e1e; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/*# sourceMappingURL=app.css.map */
